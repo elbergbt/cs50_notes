@@ -26,7 +26,7 @@ def is_valid(s):
 
 def num_location(st):
     for i in range(len(st)):
-        if st[i].isdigit():
+        if st[i].isdigit():  # check if it is digit
             if st[i] == "0":
                 return False
             return st[i:].isdigit()
@@ -43,7 +43,7 @@ def is_max_min(st):
 
 def is_two_letters(letters):
     if is_max_min(letters):
-        if letters[0].isalpha() and letters[1].isalpha():
+        if letters[0].isalpha() and letters[1].isalpha():  # .isalpha check if it is letter
             return True
         else:
             return False

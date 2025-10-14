@@ -5,14 +5,14 @@
 def main():
     message = input("Input: ")
     result = twttr_convert(message)
-    print("Output:" , "".join(result))
+    print("Output:" , result)
 
 def twttr_convert(text):
     ms = []
     for i in range(len(text)):
         if text[i] not in "aeiouAEIOU":
             ms.append(text[i])
-    return ms
+    return "".join(ms)
 
 main()
 
